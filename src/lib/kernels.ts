@@ -123,7 +123,7 @@ export const OPERATIONS: Operation[] = [
 ];
 
 export const getOperation = (id: string): Operation =>
-  OPERATIONS.find((op) => op.id === id) ?? OPERATIONS[0];
+  OPERATIONS.find((op) => op.id === id) ?? OPERATIONS[0]!;
 
 export const GROUP_LABELS: Record<Operation["group"], string> = {
   basic: "Basic / Point Operations",
